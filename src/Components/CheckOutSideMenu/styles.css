@@ -1,0 +1,5 @@
+.checkout-side-menu {
+  width: 360px;
+  top: 68px;
+  height: calc(100vh - 68px); /* Esto se hace para quitar el alto del navbar el vh es el alto de la venta */
+}
