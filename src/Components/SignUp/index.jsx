@@ -47,46 +47,46 @@ function SignUp() {
   }
   return (
     <LayOut>
-      <div className="w-72">
+      <div className="w-11/12 max-w-72">
         <h2 className="font-medium text-xl text-center" >Sign Up</h2>
-        <p className="font-light text-xs text-black/60 text-center">It’s quick and easy.</p>
-            <form className="flex flex-col" ref={form}>
-            <label htmlFor="userName" className="flex justify-between items-center">
-              <div className="w-10/12">
-                Name: 
+        <p className="font-light text-xs mb-3 text-black/60 text-center">It’s quick and easy.</p>
+            <form className="flex flex-col gap-3 w-full" ref={form}>
+            <label htmlFor="userName" className="flex flex-col sm:flex-row sm:justify-between sm:items-center w-full">
+              <div className="flex items-center gap-3">
+                <span>Name:</span> 
                 <input 
                 id="userName" 
                 type="text" 
                 name="userName"
                 placeholder="abcd"
-                className="rounded-lg p-3 focus:outline-none text-xs"/>
+                className="rounded-lg focus:outline-none text-xs flex-1"/>
               </div>
-              <span hidden={required.usernameBoolean} className="text-red-500 text-xs w-2/12">Required*</span>
+              <span hidden={required.usernameBoolean} className="text-red-500 text-xs">Required*</span>
 
             </label>
-            <label htmlFor="email" className="flex justify-between items-center"> 
-              <div className="w-10/12">
-                Email:  
+            <label htmlFor="email" className="flex flex-col sm:flex-row sm:justify-between sm:items-center w-full"> 
+              <div className="flex items-center gap-3">
+                <span>Email: </span> 
               <input 
                 id="email" 
                 type="email"
                 name="email"
                 placeholder="abc-123@gmail.com"
-                className="rounded-lg p-3 focus:outline-none text-xs"/>
+                className="rounded-lg focus:outline-none text-xs flex-grow"/>
               </div>
-              <span hidden={required.emailBoolean} className="text-red-500 text-xs w-2/12">Required*</span>
+              <span hidden={required.emailBoolean} className="text-red-500 text-xs">Required*</span>
             </label>
-            <label htmlFor="password" className="flex justify-between items-center">
-              <div className="w-10/12">
-                Password: 
+            <label htmlFor="password" className="flex flex-col sm:flex-row sm:justify-between sm:items-center w-full">
+              <div className="flex items-center w-full gap-3">
+                <span>Password:</span>
                 <input 
                 id="password" 
                 type="password" 
                 name="password" 
                 placeholder="*********"
-                className="rounded-lg p-3 focus:outline-none text-xs"/>
+                className="rounded-lg focus:outline-none text-xs flex-grow"/>
               </div>
-              <span hidden={required.passwordBoolean} className="text-red-500 text-xs w-2/12">Required*</span>
+              <span hidden={required.passwordBoolean} className="text-red-500 text-xs">Required*</span>
             </label>
             <Link to="/Blanca-E-commerce">
               <button className="text-white text-sm bg-black rounded-lg  w-full p-3" onClick={handleSubmit}>Sign Up</button>

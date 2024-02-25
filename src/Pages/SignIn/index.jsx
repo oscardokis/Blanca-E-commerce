@@ -27,11 +27,11 @@ function SignIn() {
   }
   return (
     <LayOut>
-      <div>
-        <h2 className="font-medium text-xl mb-4 text-center w-72">Welcome</h2>
-        <form ref={form} className="flex flex-col">
-          <label htmlFor="email" className="flex justify-between items-center"> 
-            <div>
+      <div className="w-11/12 max-w-72">
+        <h2 className="font-medium text-xl mb-4 text-center sm:w-72">Welcome</h2>
+        <form ref={form} className="flex flex-col w-full">
+          <label htmlFor="email" className="flex justify-between items-center w-full"> 
+            <div className="flex items-center w-full">
               Email:  
             <input 
               id="email" 
@@ -39,20 +39,20 @@ function SignIn() {
               name="email"
               defaultValue={lastUser.email}
               placeholder="abc-123@gmail.com"
-              className="rounded-lg p-3 focus:outline-none text-xs w-60"/>
+              className="rounded-lg p-3 focus:outline-none text-xs flex-1"/>
             </div>
             
           </label>
-          <label htmlFor="password" className="flex justify-between items-center">
-            <div>
-              Password: 
+          <label htmlFor="password" className="flex justify-between items-center w-full">
+            <div className="flex items-center">
+              <span>Password: </span>
               <input 
               id="password" 
               type="password" 
               name="password" 
               defaultValue={lastUser.password}
               placeholder="*********"
-              className="rounded-lg p-3 focus:outline-none text-xs"/>
+              className="rounded-lg p-3 focus:outline-none text-xs flex-1"/>
             </div>
           </label>
           <Link to="/Blanca-E-commerce">
