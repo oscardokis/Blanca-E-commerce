@@ -44,16 +44,18 @@ export const NavBar = () => {
           onClick={() => {
             setIsActiveMenu(false)
             setIsActiveUser(false)
+            setSearchByTitle("")
+            setSearchByCategory("all")
           }}
         >
           <NavLink
-            to='/'>
+            to='/Blanca-E-commerce/'>
               Blanca
           </NavLink>
         </li>
         <li>
           <NavLink
-            to='/'
+            to='/Blanca-E-commerce/'
             className={({ isActive }) => 
               isActive ? activeStyle : undefined
             }
@@ -69,7 +71,7 @@ export const NavBar = () => {
         </li>
         <li>
           <NavLink
-            to='/clothes'
+            to='/Blanca-E-commerce/clothes'
             className={({ isActive }) => 
               isActive ? activeStyle : undefined
             }
@@ -87,7 +89,7 @@ export const NavBar = () => {
         </li>
         <li>
           <NavLink
-            to='/electronics'
+            to='/Blanca-E-commerce/electronics'
             className={({ isActive }) => 
               isActive ? activeStyle : undefined
             }
@@ -103,7 +105,7 @@ export const NavBar = () => {
         </li>
         <li>
           <NavLink
-            to='/furnitures'
+            to='/Blanca-E-commerce/furnitures'
             className={({ isActive }) => 
               isActive ? activeStyle : undefined
             }
@@ -119,7 +121,7 @@ export const NavBar = () => {
         </li>
         <li>
           <NavLink
-            to='/miscellaneous'
+            to='/Blanca-E-commerce/miscellaneous'
             className={({ isActive }) => 
               isActive ? activeStyle : undefined
             }
@@ -135,7 +137,7 @@ export const NavBar = () => {
         </li>
         <li>
           <NavLink
-            to='/shoes'
+            to='/Blanca-E-commerce/shoes'
             className={({ isActive }) => 
               isActive ? activeStyle : undefined
             }
@@ -153,7 +155,11 @@ export const NavBar = () => {
       </ul>
       <h2 className="font-semibold text-2xl md:hidden">
           <NavLink
-            to='/'>
+            to='/Blanca-E-commerce'
+            onClick={() =>{
+              setSearchByTitle("")
+              setSearchByCategory("all")
+              }}>
               Blanca
           </NavLink>
       </h2>
@@ -174,7 +180,7 @@ export const NavBar = () => {
           <ul className={`${isActiveUser ? 'flex flex-col absolute top-12 right-3 bg-white rounded-lg border border-black p-6 w-11/12':'hidden'} md:flex items-center gap-3`}>
             <li>
               <NavLink
-                to='/sign-in'
+                to='/Blanca-E-commerce/sign-in'
                 className={({ isActive }) => 
                 isActive ? activeStyle : undefined
                 }
@@ -197,13 +203,13 @@ export const NavBar = () => {
               setIsActiveUser(false)
             }}>
             <NavLink
-              to='/'>
+              to='/Blanca-E-commerce'>
                 {userOn.name}
             </NavLink>
             </li>
             <li>
               <NavLink
-               to='/my-orders'
+               to='/Blanca-E-commerce/my-orders'
                className={({ isActive }) => 
                  isActive ? activeStyle : undefined}
                 onClick={() => {
@@ -216,7 +222,7 @@ export const NavBar = () => {
             </li>
            <li>
             <NavLink
-              to='/my-account'
+              to='/Blanca-E-commerce/my-account'
               className={({ isActive }) => isActive ? activeStyle : undefined}
               onClick={() => {
                 setIsActiveMenu(false)
@@ -228,7 +234,7 @@ export const NavBar = () => {
         </li>
         <li>
           <NavLink
-            to='/'
+            to='/Blanca-E-commerce/'
             className={({ isActive }) => 
               isActive ? activeStyle : undefined
             }

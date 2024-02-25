@@ -55,13 +55,13 @@ function SignIn() {
               className="rounded-lg p-3 focus:outline-none text-xs"/>
             </div>
           </label>
-          <Link to="/">
+          <Link to="/Blanca-E-commerce">
             <button className="text-white text-sm bg-black rounded-lg  w-full p-3" onClick={handleSubmit}>Log in</button>
           </Link>
         </form>
         <p hidden={required} className="text-red-500 text-xs text-center p-1">Email or Pasword are incorrect or does not exist</p>
         <p className="font-light text-center text-xs p-3 hover:underline cursor-pointer">Forgot password?</p>
-        <Link to='/sign-up'>
+        <Link to='/Blanca-E-commerce/sign-up'>
           <button type="submit" className=" text-sm border-2 font-semibold border-gray-400 text-gray-400 rounded-lg  w-full p-3">Create new account</button>
         </Link>
       </div>

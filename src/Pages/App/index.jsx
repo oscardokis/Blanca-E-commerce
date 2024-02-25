@@ -17,22 +17,22 @@ import './App.css'
 const AppRoutes = () => {
   //PASO 3 USAR useRoutes va a tener un array y por dentro va a tener un objeto en el cual se escribe el PATH y el ELEMENT
   let routes = useRoutes([
-    {path:'/', element:<Home />},
-    {path:'/clothes', element:<Home />},
-    {path:'/electronics', element:<Home />},
-    {path:'/furnitures', element:<Home />},
-    {path:'/shoes', element:<Home />},
-    {path:'/miscellaneous', element:<Home />},
-    {path:'/clothes', element:<Home />},
-    {path:'/my-order', element:<MyOrder />},
-    {path:'/my-orders', element:<MyOrders />},
-    {path:'/my-orders/last', element:<MyOrder />},
-    {path:'/my-orders/:id', element:<MyOrder />},
-    {path:'/my-account', element:<MyAccount />},
-    {path:'/sign-in', element:<SignIn />},
-    {path:'/sign-up', element:<SignUp />},
-    {path:'/log-out', element:<Logout />},
-    {path:'/*', element:<NotFound />}, // Cualquier otra ruta que no tengas va salir esta pagina y se representa con un /*
+    {path:'/Blanca-E-commerce/', element:<Home />},
+    {path:'/Blanca-E-commerce/clothes', element:<Home />},
+    {path:'/Blanca-E-commerce/electronics', element:<Home />},
+    {path:'/Blanca-E-commerce/furnitures', element:<Home />},
+    {path:'/Blanca-E-commerce/shoes', element:<Home />},
+    {path:'/Blanca-E-commerce/miscellaneous', element:<Home />},
+    {path:'/Blanca-E-commerce/clothes', element:<Home />},
+    {path:'/Blanca-E-commerce/my-order', element:<MyOrder />},
+    {path:'/Blanca-E-commerce/my-orders', element:<MyOrders />},
+    {path:'/Blanca-E-commerce/my-orders/last', element:<MyOrder />},
+    {path:'/Blanca-E-commerce/my-orders/:id', element:<MyOrder />},
+    {path:'/Blanca-E-commerce/my-account', element:<MyAccount />},
+    {path:'/Blanca-E-commerce/sign-in', element:<SignIn />},
+    {path:'/Blanca-E-commerce/sign-up', element:<SignUp />},
+    {path:'/Blanca-E-commerce/log-out', element:<Logout />},
+    {path:'/Blanca-E-commerce/*', element:<NotFound />}, // Cualquier otra ruta que no tengas va salir esta pagina y se representa con un /*
     ])
   return routes
 }

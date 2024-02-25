@@ -17,7 +17,7 @@ function MyOrder() {
   return (
     <LayOut >
       <div className=" flex sm:w-80 w-44 items-center justify-center relative mb-6">
-        <Link to='/my-orders' className="absolute left-0">
+        <Link to='/Blanca-E-commerce/my-orders' className="absolute left-0">
         <ChevronLeftIcon
           className="h-6 w-6 text-black cursor-pointer" />
         </Link>

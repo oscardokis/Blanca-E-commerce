@@ -88,7 +88,7 @@ function SignUp() {
               </div>
               <span hidden={required.passwordBoolean} className="text-red-500 text-xs w-2/12">Required*</span>
             </label>
-            <Link to="/">
+            <Link to="/Blanca-E-commerce">
               <button className="text-white text-sm bg-black rounded-lg  w-full p-3" onClick={handleSubmit}>Sign Up</button>
             </Link>
             </form>

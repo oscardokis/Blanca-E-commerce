@@ -16,7 +16,7 @@ function MyOrders() {
       {
         order.map((order, index) => (
           <Link 
-            to={`/my-orders/${index}`}
+            to={`/Blanca-E-commerce/my-orders/${index}`}
             key={index}
             >
             <OrdersCard
